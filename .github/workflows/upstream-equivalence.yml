@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
     - name: Checkout repository
-      uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
+      uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3.6.0
       with:
         ref: ${{ github.head_ref }}
     - name: Install necessary tools
@@ -53,13 +53,13 @@ jobs:
         echo "ovmfPath=${ovmfPath}" | tee -a "$GITHUB_OUTPUT"
 
 
-    - uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
+    - uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3.6.0
       with:
         repository: virtee/sev-snp-measure.git
         ref: main
         path: sev-snp-measure
 
-    - uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
+    - uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3.6.0
       with:
         repository: edgelesssys/sev-snp-measure-go.git
         ref: main
