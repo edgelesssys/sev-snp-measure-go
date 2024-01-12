@@ -23,7 +23,7 @@ jobs:
         sudo python3 -m pip install --user --require-hashes -r .github/workflows/upstream-equivalence-requirements.txt
 
     - name: Install Nix
-      uses: cachix/install-nix-action@6a9a9e84a173d90b3ffb42c5ddaf9ea033fad011 # v23
+      uses: cachix/install-nix-action@6004951b182f8860210c8d6f0d808ec5b1a33d28 # v25
       with:
         install_url: https://releases.nixos.org/nix/nix-2.9.2/install
         nix_path: nixpkgs=channel:nixos-23.05
