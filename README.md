@@ -1,5 +1,7 @@
 # sev-snp-measure-go
 
+**This repo has been moved to: https://github.com/virtee/sev-snp-measure-go.**
+
 This tool is a direct port of [virtee/sev-snp-measure](https://github.com/virtee/sev-snp-measure).
 Motivation to write this port is to integrate measurement calculation into Go tools.
 
